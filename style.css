@@ -53,7 +53,7 @@ body main #input-section {
 
 body main #input-section h2 {
   font-size: 2rem;
-  color: green;
+  color: rgba(0, 128, 43, 0.774);
 }
 
 body main #input-section .input-container {
@@ -75,7 +75,7 @@ body main #input-section .input-container textarea {
 body main #input-section #submit-btn {
   font-size: 1.7rem;
   padding: 0.5rem 1.5rem;
-  background-color: green;
+  background-color: rgba(0, 128, 43, 0.774);
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -83,22 +83,23 @@ body main #input-section #submit-btn {
 
 body main #display-section {
   margin: 1rem 0;
-}
-
-body main #display-section .note {
-  border: 1px solid #e0e0e0;
-  border-radius: 0.5rem;
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main #display-section .note {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+body main #display-section .note > * {
+  margin: 1rem 0;
 }
 
 body main #display-section .note h3 {
@@ -108,6 +109,9 @@ body main #display-section .note h3 {
 
 body main #display-section .note p {
   font-size: 1.2rem;
+  max-height: 2.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 body main #display-section .note button {
