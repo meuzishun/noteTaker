@@ -6,3 +6,91 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+
+        h1 {
+            font-size: 5rem;
+            font-weight: normal;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin: 0 auto;
+
+        #input-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+
+            h2 {
+                font-size: 2rem;
+                color: green;
+            }
+
+            .input-container {
+                width: 100%;
+                display: flex;
+                gap: 0.5rem;
+
+                label {
+                    font-size: 1.7rem;
+                }
+
+                textarea {
+                    width: 100%;
+                }
+            }
+
+            #submit-btn {
+                font-size: 1.7rem;
+                padding: 0.5rem 1.5rem;
+                background-color: green;
+                color: white;
+                border: none;
+                border-radius: 0.5rem;
+            }
+        }
+
+        #display-section {
+            margin: 1rem 0;
+
+            .note {
+                border: 1px solid rgb(224, 224, 224);
+                border-radius: 0.5rem;
+                padding: 1rem;
+    
+                display: flex;
+                flex-direction: column;
+                align-content: flex-start;
+                gap: 1rem;
+    
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                }
+    
+                p {
+                    font-size: 1.2rem;
+                }
+    
+                button {
+                    font-size: 1.3rem;
+                    padding: 0.5rem 1rem;
+                    background-color: rgba(0, 68, 255, 0.774);
+                    color: white;
+                    border: none;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+}

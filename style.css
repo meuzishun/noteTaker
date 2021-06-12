@@ -6,4 +6,116 @@
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+
+body header h1 {
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+}
+
+body main #input-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+
+body main #input-section h2 {
+  font-size: 2rem;
+  color: green;
+}
+
+body main #input-section .input-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+
+body main #input-section .input-container label {
+  font-size: 1.7rem;
+}
+
+body main #input-section .input-container textarea {
+  width: 100%;
+}
+
+body main #input-section #submit-btn {
+  font-size: 1.7rem;
+  padding: 0.5rem 1.5rem;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+body main #display-section {
+  margin: 1rem 0;
+}
+
+body main #display-section .note {
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 1rem;
+}
+
+body main #display-section .note h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+body main #display-section .note p {
+  font-size: 1.2rem;
+}
+
+body main #display-section .note button {
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 68, 255, 0.774);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
 /*# sourceMappingURL=style.css.map */
