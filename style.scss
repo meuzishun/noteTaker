@@ -11,6 +11,16 @@ $blue-color: rgba(0, 68, 255, 0.774);
 }
 
 body {
+    .overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.831);
+        z-index: 10;
+    }
+
     header {
         display: flex;
         align-items: center;
