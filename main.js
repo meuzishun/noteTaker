@@ -17,6 +17,7 @@ function createNote(text) {
     const detailBtn = document.createElement('button');
     detailBtn.classList.add('detail');
     detailBtn.innerText = 'View Detail';
+    detailBtn.addEventListener('click', openDetails);
 
     container.appendChild(heading);
     container.appendChild(paragraph);
@@ -32,6 +33,35 @@ function handleSubmit() {
 
     inputText.value = '';
     inputText.focus();
+}
+
+function openDetails(evt) {
+    const text = evt.currentTarget.previousSibling.innerText;
+    
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+
+    const closeBtn = document.createElement('p');
+    closeBtn.classList.add('close-btn');
+    closeBtn.innerText = 'X';
+    closeBtn.addEventListener('click', closeDetails);
+
+    const para = document.createElement('p');
+    para.classList.add('popup-text');
+    para.innerText = text;
+
+    popup.appendChild(closeBtn);
+    popup.appendChild(para);
+    overlay.appendChild(popup);
+    document.body.appendChild(overlay);
+}
+
+function closeDetails() {
+    const overlay = document.querySelector('.overlay');
+    document.body.removeChild(overlay);
 }
 
 submitBtn.addEventListener('click', handleSubmit);
